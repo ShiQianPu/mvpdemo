@@ -23,6 +23,9 @@ public class RigistorLoginActivity extends AppCompatActivity implements IUserCon
         name = findViewById(R.id.name);
         pwd = findViewById(R.id.pwd);
         isme = findViewById(R.id.is_me);
+
+
+        // Gekk
     }
     public void regist(View view){
 
