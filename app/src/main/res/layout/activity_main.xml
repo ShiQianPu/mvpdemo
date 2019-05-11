@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RigistorLoginActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="输入用户名"
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_below="@id/name"
+        android:hint="输入用户密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/is_me"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/pwd"
+        android:text="记住我"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:text="注册"
+        android:onClick="regist"
+        android:layout_below="@id/is_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="登录"
+        android:onClick="login"
+       android:layout_alignRight="@id/pwd"
+        android:layout_below="@id/is_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
